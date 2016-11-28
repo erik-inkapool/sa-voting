@@ -5,6 +5,7 @@ const Title = styled.h1`
     padding-top: 1vh;
     font-weight: normal;
     font-family: 'Bungee', cursive;
+    font-size: 2em;
 `;
 
 export default Title;
