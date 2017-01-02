@@ -20,16 +20,12 @@ export default class Card extends Component {
         this.handleChange = this.handleChange.bind(this);
     }
 
-    componentDidMount() {
-        this.titleInput.focus();
-    }
-
     onDelete() {
-        this.props.onDelete();
+        this.props.onDelete(this.props.cardId);
     }
 
     handleChange(event) {
-        this.props.updateTitle(event.target.value);
+        this.props.updateTitle(this.props.cardId, event.target.value);
     }
 
     render() {
@@ -38,7 +34,6 @@ export default class Card extends Component {
         return (
             <CardContainer>
                 <input
-                    ref={input => this.titleInput = input}
                     type="text"
                     value={this.props.title}
                     onChange={this.handleChange} />

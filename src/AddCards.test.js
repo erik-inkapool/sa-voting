@@ -64,7 +64,7 @@ describe('AddCards', () => {
 
         // ACT
         let card = addCards.find('Card');
-        card.prop('onDelete')();
+        card.prop('onDelete')('testId');
 
         // ASSERT
         let cards = addCards.find('Card'); 
