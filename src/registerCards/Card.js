@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { DangerButton } from './Buttons';
+import { DangerButton } from '../utility/Buttons';
 
 const CardContainer = styled.div`
     margin-top: 1em;
@@ -31,7 +31,7 @@ export default class Card extends Component {
     }
 
     onDelete() {
-        this.props.onDelete(this.props.cardId);
+        this.props.delete(this.props.cardId);
     }
 
     handleChange(event) {
@@ -39,11 +39,10 @@ export default class Card extends Component {
     }
 
     handleBlur() {
-        this.setState(prevState => ({
-            title: prevState.title,
-            editing: true
+        this.setState(prevState => Object.assign({}, prevState, {
+            editing: false
         }));
-        setTimeout(() => this.props.updateTitle(this.props.cardId, this.state.title));
+        this.props.updateTitle(this.props.cardId, this.state.title);
     }
 
     enterEditMode() {
