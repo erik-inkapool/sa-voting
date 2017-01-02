@@ -6,7 +6,6 @@ const StyledButton = styled.a`
     border: 2px solid white;
     border-radius: 10px;
     padding: 0.3em 0.5em;
-    font-weight: bold;
 `;
 
 export class Button extends Component {
