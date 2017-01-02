@@ -3,12 +3,17 @@ import { shallow } from 'enzyme';
 import AddCards, { AddAnotherButton } from './AddCards';
 
 describe('AddCards', () => {
+    var addCards;
+
+    beforeEach(() =>  {
+        addCards = shallow(<AddCards />);
+    });
 
     it('should start with no cards', () => {
         // ARRANGE
-        var addCards = shallow(<AddCards />);
 
         // ACT
+
         // ASSERT
         let cards = addCards.find('Card'); 
         expect(cards.length).toEqual(0);
@@ -16,7 +21,6 @@ describe('AddCards', () => {
 
     it('should have add button', () => {
         // ARRANGE
-        var addCards = shallow(<AddCards />);
 
         // ACT
         let addAnother = addCards.find(AddAnotherButton);
@@ -27,8 +31,6 @@ describe('AddCards', () => {
 
     it('should add a specific card', () => {
         // ARRANGE
-        var expectedCard = {};
-        var addCards = shallow(<AddCards />);
 
         // ACT
         addCards.find(AddAnotherButton).simulate('click')
@@ -36,15 +38,14 @@ describe('AddCards', () => {
         // ASSERT
         let card = addCards.find('Card');
         expect(card.length).toEqual(1);
-        expect(card.prop('title')).toEqual(undefined);
+        expect(card.prop('title')).toEqual('');
     });
 
     it('should pass down onDelete to card', () => {
         // ARRANGE
         var expectedCard = {};
-        var addCards = shallow(<AddCards />);
         addCards.setState({
-            cards: [{}]
+            cards: [{ id: 'testId' }]
         });
         
         // ACT
@@ -57,14 +58,13 @@ describe('AddCards', () => {
     it('should delete a specific card', () => {
         // ARRANGE
         var expectedCard = {};
-        var addCards = shallow(<AddCards />);
         addCards.setState({
-            cards: [{}]
+            cards: [{ id: 'testId' }]
         });
 
         // ACT
         let card = addCards.find('Card');
-        card.prop('onDelete')(card.prop('index'));
+        card.prop('onDelete')();
 
         // ASSERT
         let cards = addCards.find('Card'); 

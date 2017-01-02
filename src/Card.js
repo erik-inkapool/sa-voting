@@ -6,7 +6,7 @@ const CardContainer = styled.div`
     margin-top: 1em;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 `;
 
 const ButtonContainer = styled.div`
@@ -17,21 +17,19 @@ export default class Card extends Component {
     constructor(props) {
         super(props);
 
-        const name = props.title ? props.title : '';
-
-        this.state = { name };
-
         this.handleChange = this.handleChange.bind(this);
     }
 
+    componentDidMount() {
+        this.titleInput.focus();
+    }
+
     onDelete() {
-        this.props.onDelete(this.props.index);
+        this.props.onDelete();
     }
 
     handleChange(event) {
-        this.setState({
-            name: event.target.value
-        });
+        this.props.updateTitle(event.target.value);
     }
 
     render() {
@@ -39,7 +37,11 @@ export default class Card extends Component {
 
         return (
             <CardContainer>
-                <input type="text" value={this.state.name} onChange={this.handleChange} />
+                <input
+                    ref={input => this.titleInput = input}
+                    type="text"
+                    value={this.props.title}
+                    onChange={this.handleChange} />
                 <ButtonContainer>
                     <DangerButton onClick={onDelete} center>Delete</DangerButton>
                 </ButtonContainer>
