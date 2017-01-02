@@ -4,17 +4,18 @@ import generateGuid from 'uuid/v4';
 
 import Title from './Title';
 import Card from './Card';
-import { PrimaryButton } from './Buttons';
+import { PrimaryButton, SuccessButton } from './Buttons';
+import { Container, ButtonContainer } from './Container';
 
-const Container = styled.div`
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
-`;
-
-export const AddAnotherButton = styled(PrimaryButton) `
+export const AddAnotherButton = styled(PrimaryButton)`
     display: block;
     width: 100%;
     margin-top: 1em;
+    text-align: center;
+`;
+
+const StartVoteButton = styled(SuccessButton)`
+    display: block;
     text-align: center;
 `;
 
@@ -22,11 +23,13 @@ export default class AddCards extends Component {
     constructor(props) {
         super(props);
 
-        this.state = { cards: [] };
+        this.state = {
+            cards: []
+        };
     }
 
     addCard() {
-        this.setState((prevState) => ({
+        this.setState(prevState => ({
             cards: prevState.cards.concat({
                 id: generateGuid(),
                 title: ''
@@ -36,7 +39,7 @@ export default class AddCards extends Component {
 
     deleteCard(index) {
         return () => {
-            this.setState((prevState) => {
+            this.setState(prevState => {
                 var copy = prevState.cards.slice();
                 copy.splice(index, 1);
                 return {
@@ -48,7 +51,7 @@ export default class AddCards extends Component {
 
     updateTitle(index) {
         return (title) => {
-            this.setState((prevState) => {
+            this.setState(prevState => {
                 const oldCard = prevState.cards[index];
                 const newCard = Object.assign({}, oldCard);
                 newCard.title = title;
@@ -74,12 +77,27 @@ export default class AddCards extends Component {
 
         const addCard = this.addCard.bind(this);
 
+        let containerOffset = '0px';
+        if(this.buttonContainer) {
+            containerOffset = this.buttonContainer.offsetHeight + 'px';
+        }
+
+        const ModifiedContainer = styled(Container)`
+            height: calc(100vh - ${containerOffset} - 0.5em);
+            overflow-y: auto;
+        `;
+
         return (
-            <Container>
-                <Title>Select cards</Title>
-                {cards}
-                <AddAnotherButton onClick={addCard}>Add Another</AddAnotherButton>
-            </Container>
+            <div>
+                <ModifiedContainer>
+                    <Title>Select cards</Title>
+                    {cards}
+                    <AddAnotherButton onClick={addCard}>Add Another</AddAnotherButton>
+                </ModifiedContainer>
+                <ButtonContainer innerRef={buttonContainer => this.buttonContainer = buttonContainer}>
+                    <StartVoteButton>Start voting</StartVoteButton>
+                </ButtonContainer>
+            </div>
         );
     }
 }
