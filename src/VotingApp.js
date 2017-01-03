@@ -1,16 +1,13 @@
-import React, { Component } from 'react';
-import Background from './utility/Background';
-import CardListHandler from './registerCards/CardListHandler';
+import { connect } from 'react-redux'
 
-class VotingApp extends Component {
-  render() {
-    return (
-      <Background>
-       <CardListHandler>
-       </CardListHandler>
-      </Background>
-    );
-  }
-}
+import Voting from './Voting';
+
+const mapStateToProps = state => ({
+    route: state.route
+});
+
+const mapDispatchToProps = dispatch => ({});
+
+const VotingApp = connect(mapStateToProps, mapDispatchToProps)(Voting);
 
 export default VotingApp;

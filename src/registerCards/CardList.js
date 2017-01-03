@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 
 import Card from './Card';
-import Title from '../utility/Title';
+import Title from '../utility/titles';
 import { PrimaryButton, SuccessButton } from '../utility/Buttons';
 import { Container, ButtonContainer } from '../utility/Container';
 
@@ -13,7 +13,7 @@ export const AddCardButton = styled(PrimaryButton)`
     text-align: center;
 `;
 
-const AddCards = ({cards, updateCardTitle, deleteCard, addCard}) => {
+const CardList = ({cards, updateCardTitle, deleteCard, addCard, startVote}) => {
     const StartVoteButton = styled(SuccessButton)`
         display: block;
         text-align: center;
@@ -36,13 +36,13 @@ const AddCards = ({cards, updateCardTitle, deleteCard, addCard}) => {
                 <AddCardButton onClick={addCard}>Add Another</AddCardButton>
             </Container>
             <ButtonContainer>
-                <StartVoteButton>Start voting</StartVoteButton>
+                <StartVoteButton onClick={startVote}>Start voting</StartVoteButton>
             </ButtonContainer>
         </div>
     );
 };
 
-AddCards.propTypes = {
+CardList.propTypes = {
     cards: PropTypes.arrayOf(PropTypes.shape({
         id: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired
@@ -50,6 +50,7 @@ AddCards.propTypes = {
     updateCardTitle: PropTypes.func.isRequired,
     deleteCard: PropTypes.func.isRequired,
     addCard: PropTypes.func.isRequired,
+    startVote: PropTypes.func.isRequired
 }
 
-export default AddCards;
+export default CardList;

@@ -1,5 +1,36 @@
 import _ from 'lodash';
 
+const option = (state = {}, action) => {
+    let { type, payload } = action;
+
+    switch (type) {
+        case 'UPDATE_OPTION_NAME':
+            if (state.id !== payload.id) {
+                return state;
+            }
+
+            return Object.assign({}, state, {
+                name: payload.name
+            });
+        case 'UPDATE_OPTION_VOTES':
+            if (state.id !== payload.id) {
+                return state;
+            }
+
+            return Object.assign({}, state, {
+                votes: payload.votes
+            });
+        case 'ADD_OPTION':
+            return {
+                id: payload.id,
+                name: '',
+                votes: 0
+            }
+        default:
+            return state;
+    }
+};
+
 const card = (state = {}, action) => {
     let { type, payload } = action;
 
@@ -7,7 +38,8 @@ const card = (state = {}, action) => {
         case 'ADD_CARD':
             return {
                 id: payload.id,
-                title: ''
+                title: '',
+                options: payload.options
             };
         case 'CHANGE_TITLE':
             if (state.id !== payload.id) {
@@ -17,10 +49,25 @@ const card = (state = {}, action) => {
             return Object.assign({}, state, {
                 title: payload.title
             });
+        case 'UPDATE_OPTION_NAME':
+            state.options = state.options.map(o => option(o, action));
+            return state;
+        case 'UPDATE_OPTION_VOTES':
+            state.options = state.options.map(o => option(o, action));
+            return state;
+        case 'ADD_OPTION':
+            if(payload.cardId !== state.id) {
+                return state;
+            }
+            state.options = [...state.options, option(undefined, action)];
+            return state;
+        case 'DELETE_OPTION':
+            state.options = _.filter(state.options, option => option.id !== action.payload.id);
+            return state;
         default:
             return state;
     }
-}
+};
 
 const cards = (state = [], action) => {
     switch (action.type) {
@@ -33,9 +80,17 @@ const cards = (state = [], action) => {
             return state.map(c => card(c, action));
         case 'DELETE_CARD':
             return _.filter(state, card => card.id !== action.payload.id);
+        case 'UPDATE_OPTION_NAME':
+            return state.map(c => card(c, action));
+        case 'ADD_OPTION':
+            return state.map(c => card(c, action));
+        case 'DELETE_OPTION':
+            return state.map(c => card(c, action));
+        case 'UPDATE_OPTION_VOTES':
+            return state.map(c => card(c, action));
         default:
             return state;
     }
-}
+};
 
 export default cards;

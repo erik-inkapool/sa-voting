@@ -9,7 +9,7 @@ import CardList from './CardList';
 describe('Cardlist', () => {
     it('should have an "add card" button', () => {
         // ARRANGE
-        var cardList = shallow(<CardList cards={[]} updateCardTitle={() => { } } deleteCard={() => { } } addCard={() => { } } />);
+        var cardList = shallowCardList({})
 
         // ACT
 
@@ -21,7 +21,7 @@ describe('Cardlist', () => {
     it('should call addCard on "add card" click', () => {
         // ARRANGE
         const onAddSpy = spy();
-        var cardList = shallow(<CardList cards={[]} updateCardTitle={() => { } } deleteCard={() => { } } addCard={ onAddSpy } />);
+        var cardList = shallowCardList({addCard: onAddSpy});
         let addCardButton = cardList.find(AddCardButton);
 
         // ACT
@@ -34,7 +34,7 @@ describe('Cardlist', () => {
     it('should render cards', () => {
         // ARRANGE
         var cards = [{ title: '', id: '' }];
-        var cardList = shallow(<CardList cards={cards} updateCardTitle={() => { } } deleteCard={() => { } } addCard={() => { } } />);
+        var cardList = shallowCardList({cards})
 
         // ACT
         let renderedCards = cardList.find(Card);
@@ -47,7 +47,7 @@ describe('Cardlist', () => {
         // ARRANGE
         var expectedTitle = 'Test title';
         var cards = [{ title: expectedTitle, id: '' }];
-        var cardList = shallow(<CardList cards={cards} updateCardTitle={() => { } } deleteCard={() => { } } addCard={() => { } } />);
+        var cardList = shallowCardList({cards})
 
         // ACT
         let renderedCards = cardList.find(Card);
@@ -55,4 +55,8 @@ describe('Cardlist', () => {
         // ASSERT
         expect(renderedCards.props().title).toEqual(expectedTitle);
     });
+
+    const shallowCardList = ({cards=[], updateCardTitle=() => {}, deleteCard=() => {}, addCard=() => {}, startVote=() => {}}) => {
+        return shallow(<CardList cards={cards} updateCardTitle={updateCardTitle} deleteCard={deleteCard} addCard={addCard} startVote={startVote} />);
+    };
 });

@@ -1,6 +1,7 @@
 import { connect } from 'react-redux'
 
 import { addCard, deleteCard, changeTitle } from '../actions/cards';
+import { navigate } from '../actions/route';
 import CardList from './CardList';
 
 const mapStateToProps = state => ({
@@ -18,6 +19,10 @@ const mapDispatchToProps = dispatch => ({
 
     deleteCard: (id) => {
         dispatch(deleteCard(id));
+    },
+
+    startVote: () => {
+        dispatch(navigate('VOTE'));
     }
 });
 

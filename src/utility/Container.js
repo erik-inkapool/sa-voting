@@ -6,6 +6,7 @@ export const Container = styled.div`
     height: 100%;
     margin-left: ${ContainerMargin};
     margin-right: ${ContainerMargin};
+    padding-bottom: 4em;
 `;
 
 export const ButtonContainer = styled.div`
