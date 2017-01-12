@@ -36,11 +36,9 @@ const card = (state = {}, action) => {
 
     switch (type) {
         case 'ADD_CARD':
-            return {
-                id: payload.id,
-                title: '',
-                options: payload.options
-            };
+            return Object.assign({
+                title: ''
+            }, payload);
         case 'CHANGE_TITLE':
             if (state.id !== payload.id) {
                 return state;

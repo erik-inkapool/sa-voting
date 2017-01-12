@@ -1,0 +1,1226 @@
+[
+    {
+        "title": "An Aeon of Legend (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Each leader now possesses the abilities of all Leader types. When executing Leaders, players must exhaust of lose control of two additional planets. ",
+            "against": "Each player may immediately roll a Fate Roll for each of their Leaders in captivity or put one Killed Leader back into play at a friendly planet."
+        }
+    },
+    {
+        "title": "New Constitution",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "All current laws are discarded. Each player must choose and exhaust two of his planets if able.",
+            "against": "The player with the most votes against this agenda may choose and discard one law."
+        }
+    },
+    {
+        "title": "Protect the Heartland",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Immediately place 1 Space Mine (not belonging to any player) on each border of the Mecatol Rex system.",
+            "against": "Each player may spend 2 influence to place neutral Space Mines (not belonging to any player) on any two borders."
+        }
+    },
+    {
+        "title": "Diversified Income (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "No player may have more Trade Goods (in the Trade Goods area) than the total number of planets he controls.",
+            "against": "Each player without any Trade Goods immediately receives 2 Trade Goods."
+        }
+    },
+    {
+        "title": "Amnesty for the Fallen",
+        "defaultOptions": true,
+        "elect": " ",
+        "resolutions": {
+            "for": "The player(s) with the least resources worth of ships gain 4 Trade Goods. The player with fewer Victory Points than any other player gains 4 Trade Goods.",
+            "against": "For the remainder of the round, any player conducting a hostile action against the player(s) with the (at the time) most inferior fleet or the fewest Victory Points must exhaust or lose control of a planet. "
+        }
+    },
+    {
+        "title": "Cost Overruns",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Each player must discard one Trade Good for each planet he controls.",
+            "against": "The player with the most votes against this agenda must discard one Trade Good."
+        }
+    },
+    {
+        "title": "Vorhal Peace Prize (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "The player(s) with the lowest Fleet Supply at the beginning of each Status Phase gain 1 additional Command Counter during that Status Phase.",
+            "against": "The player(s) with the lowest Fleet Supply immediately gain 3 Trade Goods. "
+        }
+    },
+    {
+        "title": "Repeal Labor Laws (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Space Docks may be built on planets aquired the same round.",
+            "against": "Each player must lose 3 Trade Goods or immediately destroy one of his Space Docks."
+        }
+    },
+    {
+        "title": "Technology Investigation Committee",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "The secondary ability of the Technology Strategy may not be executed this round (even by the card holder).",
+            "against": "Exhaust planets with technology specialties. Blue technologies may not be used for the remainder of this round."
+        }
+    },
+    {
+        "title": "Trade War (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Each time a player executes the secondary ability of the Trade Strategy he may also take one Trade Good from an opponent's Trade Goods area or active Trade Agreement.",
+            "against": "Players must discard one Trade Good (if able)."
+        }
+    },
+    {
+        "title": "Publicize Weapon Schematics (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Each player gains the Warsun technology, regardless of prerequisites. When a fighter rolls a natural 10 as a combat roll the resulting hit must be assigned to a Warsun (if able).",
+            "against": "Red and yellow technologies may not be aquired this round. "
+        }
+    },
+    {
+        "title": "Forbidden Research (LAW)",
+        "elect": "Elect Technology Color",
+        "resolutions": {
+            "for": "Technology of the elected color may not be aquired."
+        }
+    },
+    {
+        "title": "Science Community Speaker (LAW)",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "The elected player may execute the secondary ability of the Technology Strategy without paying a Command Counter from his Strategy Allocation. His cost to purchase technologies is reduced by 1."
+        }
+    },
+    {
+        "title": "Restoration of the Throne",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "All players must exhaust all planets. Mecatol Rex gains 2 Refineries and 3 Colonies.",
+            "against": "Exhaust Mecatol Rex and remove 1 ground unit from the planet. If no ground units remains on Mecatol Rex, it reverts to neutral status."
+        }
+    },
+    {
+        "title": "Checks and Balances (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Choosing Strategy Cards is done is order of highest to lowest total influence. When picking a Strategy Card it may be given to any player that has not yet received a Strategy Card.",
+            "against": "All Strategy Cards are immediately exhausted (turned to their inactive side without being executed)."
+        }
+    },
+    {
+        "title": "Space Mine Simplification (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Space Mines now cost 1 resource each and are deployed as neutral mines. Space Mines can no longer be deployed on wormholes.",
+            "against": "Turn all Space Mines on the board neutral."
+        }
+    },
+    {
+        "title": "Rescind",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "After current agendas have been resolved, the player who placed most votes for this agenda receives +3 votes for the rest of the round, and may choose an active law. Conduct a new round of voting on the chosen law (replenishing total votes). ",
+            "against": "Reveal one Stage I Public Objective."
+        }
+    },
+    {
+        "title": "Enforcer",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "The elected player may, immediately following the secondaries of Assembly, take two consecutive tactical actions. The Command Counter used for these actions are paid from reinforcements."
+        }
+    },
+    {
+        "title": "Holder of Mecatol Rex",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "The player who controls Mecatol Rex may immediately choose and discard one current law, or play an agenda from his hand and immediately choose the outcome (count as 10 votes).",
+            "against": "The player who controls Mecatol Rex may place one Armor (MU) or one PDS on Mecatol Rex."
+        }
+    },
+    {
+        "title": "Technology Tariffs (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Technologies are now paid with influence instead of resources. Players may never benefit from more than 2 Technology discounts per Technology purchased.",
+            "against": "Technology aquired this round have no effect for the remainder of the round."
+        }
+    },
+    {
+        "title": "Shard of the Throne (LAW)",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "The elected player receives 1 Victory Point. Whenever another player wins a Space Battle or Invasion Combat against this player, that player receives 1 Trade Good."
+        }
+    },
+    {
+        "title": "Incentive Program (LAW)",
+        "elect": "Elect Public Objective",
+        "resolutions": {
+            "for": "Each player that has already completed the elected Public Objective receives 1 Victory Point. Players that fulfill the elected objective in the future receive one more Victory Point than stated on the Public Objective. "
+        }
+    },
+    {
+        "title": "Desperate Measures",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Elect (non-Home) System",
+            "against": "Remove all Command Counters from the elected system, exhaust planets and Space Docks in the system."
+        }
+    },
+    {
+        "title": "Compensated Decomissioning",
+        "elect": "Elect Fleet",
+        "resolutions": {
+            "for": "The owner of the elected fleet must remove half the nunber (round down) of each ship type in the fleet (including Fighters). The owner gains Trade Goods equal to the resource value of all the removed non-Fighter ships."
+        }
+    },
+    {
+        "title": "Flawed Planning",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Each player shuffles his Secret Objective back into the deck. Each player is then dealt a new Secret Objective (even if he already completed one). ",
+            "against": "Each player that has completed his Secret Objective receives 1 Victory Point."
+        }
+    },
+    {
+        "title": "Imperial Containment",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "For the remainder of the round, the player(s) with the most planets outside their Home System (at the time the action is done) must pay one additional Command Counter from his Command Pool to conduct tactical actions. ",
+            "against": "The player(s) with the least planets outside their Home System receives one Command Counter."
+        }
+    },
+    {
+        "title": "Arms Reduction",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Each fleet must be reduced immediately to no more than 10 ships and no more than 15 resources worth of non-Fighter ships. Each army must be reduced immediately to no more than 8 ground units. Exhaust all Space Docks.",
+            "against": "All planets with red technology specialties are immediately exhausted."
+        }
+    },
+    {
+        "title": "Mutiny",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Each player that voted for this agenda gains 1 Victory Point.",
+            "against": "Each player that voted for this agenda loses 1 Victory Point."
+        }
+    },
+    {
+        "title": "Veto Power (LAW)",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "Give this card to the elected player. After agendas have been chosen by the Assembly holder, the elected player may discard one of them and then discard this card. The Assembly resumes without the discarded agenda."
+        }
+    },
+    {
+        "title": "Bellum Gloriosum (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Whenever you participate in a Space Battle or Invasion Combat you gain 1 Trade Good.",
+            "against": "Remove flags from Public Objectives not related to Technology, but retain the Victory Points. The objectives may now be claimed normally again."
+        }
+    },
+    {
+        "title": "Tax Reform",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Exhaust all planets. No secondary abilities may be used for the remainder of this round.",
+            "against": "Players may refresh up to three planets each."
+        }
+    },
+    {
+        "title": "Equal Threats",
+        "elect": "Elect Pair of Players",
+        "resolutions": {
+            "for": "Each elected player must give his unclaimed Secret Objective card to the other elected player (if able)."
+        }
+    },
+    {
+        "title": "Glory of the Empire (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "From now on, any player that fulfills his Secret Objective receives 1 addtional Victory Point.",
+            "against": "Each player that has already fulfilled his Secret Objective receives 1 Victory Point."
+        }
+    },
+    {
+        "title": "Interstellar Arms Dealer",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Each player may pay 2 resources to place up to 2 Destroyers and 1 Cruiser in systems containing friendly planets or units.",
+            "against": "The cost of all (non-Fighter) ships is increased by 1 resource until the end of the round. "
+        }
+    },
+    {
+        "title": "Industrial Lobby (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "During Assembly, after votes have been revealed, players may spend resources to place one additional vote per resource spent (players may continue to spend resources this way in no particular order).",
+            "against": "Refresh all non-Home System planets with influence value higher than resource value."
+        }
+    },
+    {
+        "title": "Minister of Exploration (LAW)",
+        "elect": "Elect Player ",
+        "resolutions": {
+            "for": "The elected player gains 1 Trade Good at the end of each turn in which at least one player took control of a neutral planet, or moved ships into or through a red bordered system (asteroid belts and other border tokens do not count)."
+        }
+    },
+    {
+        "title": "Trade Embargo",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "Elect player with two active Trade Agreements. The elected player must break one of his Trade Agreements. All Trade Goods on both affected Trade Contracts are collected by respective players trade partner. No new Trade Agreements may be formed by the elected player this round. "
+        }
+    },
+    {
+        "title": "Regulated Conscription (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "The resource cost to purchase ground units is twice the indicated value.",
+            "against": "No players may place one Ground Force on each planet they control."
+        }
+    },
+    {
+        "title": "New Extraction Methods (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Whenever moving one or more ships through an Asteroid Field, gain 1 Trade Good.",
+            "against": "Asteroid Fields may not be traversed for the remainder of the round. Everyone that voted for this agenda must discard 1 Trade Good."
+        }
+    },
+    {
+        "title": "Minister of Intelligence (LAW)",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "The elected player may, after an Action Card has been played, pay 4 influence to cancel the effect and discard the Action Card instead. Count it as if the Action Card had not been played."
+        }
+    },
+    {
+        "title": "Repeal",
+        "elect": "Elect Current Law",
+        "resolutions": {
+            "for": "Discard the elected law."
+        }
+    },
+    {
+        "title": "Demilitarized Zone (LAW)",
+        "elect": "Elect Border",
+        "resolutions": {
+            "for": "Place a (neutral) Space Mine on the elected border (this border may not be a wormhole). When the Space Mine token is triggered and removed, immediately place another one."
+        }
+    },
+    {
+        "title": "Lord of the Merchants (LAW)",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "At the start of every round, the elected player receives three Trade Goods. Every time a player wins a Space Battle or Invasion Combat against the elected player, this player may take one of the elected player's Trade Goods."
+        }
+    },
+    {
+        "title": "Diplomatic Protection",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "For the next round, no player may engage in Invasion Combat against the elected player."
+        }
+    },
+    {
+        "title": "Corrupt Empire (LAW)",
+        "resolutions": {
+            "for": "The first player to destroy a Space Dock belonging to the elected player as a result of either Space Battle or Invasion Combat receives 1 Victory Point. Then discard this card."
+        }
+    },
+    {
+        "title": "Humane Labor (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "The resource value of planets are no longer added to the production capacity of Space Docks. ",
+            "against": "No Space Docks may produce units for the remainder of this round. "
+        }
+    },
+    {
+        "title": "Investigate Spatial Anomalies (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Ion Storms and Nebulas no longer have an effect on ship movement.",
+            "against": "No Special Systems (red-bordered) may be entered for the remainder of this round."
+        }
+    },
+    {
+        "title": "Mass Mobilization",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Divide the total votes for this agenda by 5. Each player may place that number of Ground Force units on planets he controls.",
+            "against": "No player may purchase Ground Force units for the remainder of this round."
+        }
+    },
+    {
+        "title": "Enemy of the Throne (LAW)",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "The first player to win a Space Battle as the attacker against the elected player gains 2 Trade Goods, 1 Command Counter, and 1 Action Card. Then discard this card."
+        }
+    },
+    {
+        "title": "Centrillic Gas Harvest Enterprise",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Each player gains 4 Trade Goods for each Nebula and/or Ion Storm system he controls.",
+            "against": "Conduct the effect of Space Mines against each fleet in a Nebula or Ion Storm system. Place 4 Trade Goods on each of these systems; these work exactly like Natural Wealth, except that they are claimed by the owner of ships in the system."
+        }
+    },
+    {
+        "title": "Council Precept (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Give this card to the current Speaker. As an action, he may discard this card to invoke (treat as 10 votes) the prefered outcome of a Political Card in his hand."
+        }
+    },
+    {
+        "title": "Subsidized Studies (LAW)",
+        "elect": "Elect Technology Color",
+        "resolutions": {
+            "for": "The cost of all Technologies of the elected color is decreased by three. The cost of all other Technology is increased by two."
+        }
+    },
+    {
+        "title": "Subsidized Industry",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "The elected player may immediately place a free Spade Dock on any planet he controls, even if it was aquired this round. The Space Dock starts exhausted."
+        }
+    },
+    {
+        "title": "Sharing of Technology",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Each player may immediately aquire on Technology held by one of their trade partners, regardless of prerequisites.",
+            "against": "All Trade Agreements are immediately broken."
+        }
+    },
+    {
+        "title": "Minister of Commerce",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "Give this card to the elected player. The elected player may take 1 Trade Good from up to two different players after the secondary ability of the Trade Strategy has been conducted. During the Status Phase, he may now produce Trade Goods fom influence at a 1:1 ratio."
+        }
+    },
+    {
+        "title": "Infinite Warfare (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Amor (MU) and PDS units now cost 1 resource and one production capacity to produce.",
+            "against": "Players voting against this agenda may upgrade 2 Ground Forces to Shock Troops."
+        }
+    },
+    {
+        "title": "Labor Force Politics (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "The unmodified (printed) influence and resource value of all planets are swapped.",
+            "against": "Each player must exhaust all but one of his Space Docks."
+        }
+    },
+    {
+        "title": "Revote",
+        "elect": "Elect Law",
+        "resolutions": {
+            "for": "Elect an existing law that was in effect at the beginning of the round. After current agendas are resolved, conduct a new round of voting on the elected law (with replenished votes)."
+        }
+    },
+    {
+        "title": "Colonization Licencing (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "In order to execute a planetary landing on a neutral planet, player must spend influence at least equal to the resource value of the planet.",
+            "against": "All players must immediately exhaust one planet of their choice for every three planets they control outside their Home-Systems (round down), if able."
+        }
+    },
+    {
+        "title": "Minister of Internal Security (LAW)",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "Give this card to the elected player. Whenever any player activates Mecatol Rex, the elected player may discard this card to immediately inflict up to four hits on an army present on Mecatol Rex."
+        }
+    },
+    {
+        "title": "Common Practice (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Players may, at the start of their turn, spend 10 influence to discard an active law. Opponents may then cancel this effect by immediately spending 6 influence.",
+            "against": "The player with the most planets outside his Home System may discard one active law."
+        }
+    },
+    {
+        "title": "Hope's End Ground Training",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "The player controlling Hope's End may immediately place 1 Ground Force and 2 Shock Troops there.",
+            "against": "Refresh Hope's End."
+        }
+    },
+    {
+        "title": "Unconventional Measures",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Each player may draw one Action Card. Then the player with the most votes for this agenda may draw one more.",
+            "against": "Each player must immediately discard two random Action Cards."
+        }
+    },
+    {
+        "title": "Mining Operations",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Place 3 Trade Goods, treated like Natural Wealth, on each planet in systems adjacent to either Asteroid Fields or Asteroid Belts.",
+            "against": "Each player discards 2 Trade Goods from Trade Goods area, if able."
+        }
+    },
+    {
+        "title": "Shifting Loyalties",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "The player with the most votes for this agenda may take one random Action Card from up to three opponents. Then the player with the second most votes for this agenda may take one random Action Card from one opponent.",
+            "against": "Players that voted for this agenda must discard all but one of their Action Cards."
+        }
+    },
+    {
+        "title": "Fund Mega University (LAW)",
+        "elect": "Elect (non-Home System) Planet",
+        "resolutions": {
+            "for": "This planet always yields votes, even if exhausted. It gains one additional Technology specialty of each of the four colors. When the owner executes the secondary ability of the Technology strategy, he may purchase and extra Technology."
+        }
+    },
+    {
+        "title": "Policy Review (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "For each Assembly, the holder must include one agenda from the discard pile (in addition to the normal options). After the Assembly, place it on the bottom of the Political deck instead.",
+            "against": "Shuffle the discard pile back into the Political deck."
+        }
+    },
+    {
+        "title": "Open the Trade Routes",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Place the indicated number of Trade Goods on each active Trade Agreements.",
+            "against": "All players must discard half (round up) of their Trade Goods."
+        }
+    },
+    {
+        "title": "Extensive Logistics Redesign Initiative (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "There are no longer different types of carrying capacity; Fighter capacity and Ground Force capacity becomes regular capacity.",
+            "against": "No cargo may be picked up for the remainder of this round."
+        }
+    },
+    {
+        "title": "Council Elder (LAW)",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "Give this card to the elected player. The elected player may discard this card immediately after an \"Elect\" agenda is chosen for voting. Only the elected player's votes are counted in resolving the agenda."
+        }
+    },
+    {
+        "title": "Imperial Peace (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Players may not conduct Invasion Combat (or bombardment) against Mecatol Rex.",
+            "against": "Mecatol Rex is the only planet players may invade this round."
+        }
+    },
+    {
+        "title": "Pax Magnifica",
+        "elect": "Place Votes",
+        "resolutions": {
+            "for": "Obtain any amount of the following bonuses by placing the required number of votes: Trade Good: 2 votes. Command Counter: 4 votes. Victory Point: 10 votes."
+        }
+    },
+    {
+        "title": "Freedom of Information Act (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Player must play with their Action Cards and Political Cards face-up and visible to all players. (Yssaril may keep 1 Action Card secret).",
+            "against": "The player (or players) with the fewest Action Cards immediately draws 1 Action Card and 1 Political Card."
+        }
+    },
+    {
+        "title": "Ancient Artifact",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Roll a die. On a 1 to 5 all units in the Mecatol Rex system are destroyed, Mecatol Rex turns neutral, and each fleet and planet in adjacent systems sustains two combat rolls with value of 5 (treated as bombardment against the planets). On a 6 to 10, each player gains two Technologies of choice for which they have the required prerequisites.",
+            "against": "Discard this card."
+        }
+    },
+    {
+        "title": "Class Struggle (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "All Trade Agreements in the game now have a value of 2.",
+            "against": "Each player immediately loses 2 Trade Goods."
+        }
+    },
+    {
+        "title": "Update Star Maps",
+        "elect": "Elect Void System",
+        "resolutions": {
+            "for": "Replace elected empty system tile with a random unused planetary system tile. Domain Counters present in the system are discarded."
+        }
+    },
+    {
+        "title": "Minister of War (LAW)",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "The elected player may spend a Command Counter from his Strategy Allocation area to gain two automatic hits before the first round of Space Battle in which he participates, or as part of bombardment. These hits are applied immediately, with no return with allowed by the casualties taken."
+        }
+    },
+    {
+        "title": "Critical Supply Measures (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Whenever players has more ground units on a planet than the number of Command Counters in their fleet supply, they must remove excess ground units.",
+            "against": "Each player must exhaust two planets (if able)."
+        }
+    },
+    {
+        "title": "Wormhole Regeneration (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Wormholes of all types are now considered adjacent (for movement purposes) to all other wormholes.",
+            "against": "No units may enter or leave the Wormhole Nexus for the rest of the round."
+        }
+    },
+    {
+        "title": "Non-aggression Pact (LAW)",
+        "elect": "Elect Pair of Players",
+        "resolutions": {
+            "for": "The elected players must either exhaust or lose control of two planets when being the aggressor in a Space Battle or Invasion Combat against the other elected player. Then discard this law."
+        }
+    },
+    {
+        "title": "Traffic Tariffs (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "In order to produce units in a system, the active player must first spend 1 influence.",
+            "against": "Each player must immediately discard one Command Counter from his Command Pool or Strategy Allocation, if able."
+        }
+    },
+    {
+        "title": "Imperial Mandate",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Each player receives one Victory Point.",
+            "against": "The player(s) with the most Victory Points gain(s) one Command Counter."
+        }
+    },
+    {
+        "title": "Resource Management (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Players may not re-distribute Command Counters during the Status Phase.",
+            "against": "Draw and put into play one Public Stage I Objective."
+        }
+    },
+    {
+        "title": "Short Term Truce",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "No player may activate any system that contains enemy ships or invade any planet controlled by another player next round. Any player may spend 10 influence at any time to discard this effect.",
+            "against": "Each player who voted against this agenda must exhaust one planet. The planet is chosen by the opponent to that player's left."
+        }
+    },
+    {
+        "title": "Industrial Hub Fortifications (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Space Docks gain the space cannon and planetary shield abilities (as if it was a PDS unit).",
+            "against": "Refresh all exhausted Space Docks."
+        }
+    },
+    {
+        "title": "Dominion Disputes",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Players may place one Ground Force and one PDS unit on each planet they control that is closer to (including shortest route through wormholes) an enemy Home System than their own.",
+            "against": "Exhaust these planets."
+        }
+    },
+    {
+        "title": "Prophecy of Ixth (LAW)",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "The elected player's Fighters receive +2 to all combat rolls when attacking and +1 when defending. After this round, the elected player must conduct (be the attacker) at least one Space Battle every round or discard this law."
+        }
+    },
+    {
+        "title": "Crown of Thalnos (LAW)",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "The elected player's ground units now receive +2 to all combat rolls when attacking and +1 when defending. The elected player must conduct at least one Invasion Combat every round (after this round), or discard this law."
+        }
+    },
+    {
+        "title": "Sanctuary Shield (LAW)",
+        "elect": "Elect a Special System",
+        "resolutions": {
+            "for": "The special abilities of this system is now ignored. Players may activate and travel into and through the system as if it were an empty system. Fleets in this system do not block movement."
+        }
+    },
+    {
+        "title": "Research Grant (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "When purchasing Technology, you may treat it as being another color for (for the purposes of discounts from Technology specialties).",
+            "against": "Exhaust all planets with Technology specialties."
+        }
+    },
+    {
+        "title": "Minister of Peace (LAW)",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "Givet his card to the elected player. He may discard this card at any time to cancel a fleet's movement into a system containing an enemy fleet, as long as the elected player controls neither fleet. The target system is still activated by the attacker."
+        }
+    },
+    {
+        "title": "Minister of Policy (LAW)",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "The elected player receives one additional Action Card each Status Phase."
+        }
+    },
+    {
+        "title": "Documenting Research (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "When a player uses the secondary ability of the Technology Strategy, reduce his cost to 0 if he is purchasing the same Technology aquired as the player using the primary ability (pre-prequisites are still required).",
+            "against": "Exhaust each planet that has a Technology specialty."
+        }
+    },
+    {
+        "title": "Archived Secret",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "The elected player may draw one Secret Objective card. This may be claimed in addition to his existing Secret Objective, but not in the same round. When an ability affects his Secret Objective and he has two in his hand, he choses which one it affects."
+        }
+    },
+    {
+        "title": "Technology Buy-back (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Players may, during the Status Phase, discard one of their Technologies in exchange for 5 Trade Goods, even if it is a pre-requisite for another Technology.",
+            "against": "Players may discard one Technology to receive one which they currently hold the pre-requisites for."
+        }
+    },
+    {
+        "title": "Public Execution",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "The elected player loses all Action Cards, his planets are exhausted, and his units receive -1 to all combat rolls for the remainder of this round."
+        }
+    },
+    {
+        "title": "Minister of Treasury",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "Immediately place 2 Trade Goods on this card, and an additonal three during every Status Phase. The elected player may, as an action, discard this law and collect the Trade Goods present on this card."
+        }
+    },
+    {
+        "title": "War Funding (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Players do not have to adhere to fleet supply limits during the Action Phase. At the start of the Status Phase, players must remove any ships in excess of fleet supply.",
+            "against": "Each player must immediately discard one Command Counter from his fleet supply."
+        }
+    },
+    {
+        "title": "Aggressive Strategy ",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "In rotation order, players may immediately execute the secondary abilities of their respective Strategy cards (in any order if they have more than one), without spending Command Counters.",
+            "against": "No player may execute the secondary ability of any Strategy card for the remainder of this round."
+        }
+    },
+    {
+        "title": "Emperor (LAW)",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "While this law is in play, the elected player gains 2 Victory Points."
+        }
+    },
+    {
+        "title": "Sector Quarentine",
+        "elect": "Elect System",
+        "resolutions": {
+            "for": "No ships may traverse the borders of this system during the next round of play. If this system gained at least 12 votes more than any other system, the quarentine will take effect immediately (and last throughout next round)."
+        }
+    },
+    {
+        "title": "Forced Economic Independence (LAW)",
+        "elect": "Elect Pair of Players",
+        "resolutions": {
+            "for": "Place the flags of the elected players on this law. The elected players cannot have Trade Agreements with other while this law is in play. If they have a Trade Agreement already, it is immediately broken."
+        }
+    },
+    {
+        "title": "Fleet Regulations (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Upkeep is paid for each Fleet Supply exceeding 4 (instead of 8).",
+            "against": "Each player receives one Command Counter from his reinforcements and must place it in his Fleet Supply area."
+        }
+    },
+    {
+        "title": "Dispute Resolution",
+        "elect": "Elect Planet",
+        "resolutions": {
+            "for": "Destroy all units on the planets receiving the most votes (beloning to two different players). The two planets revert to neutral status. Neither Mecatol Rex nor Home System planets may be elected."
+        }
+    },
+    {
+        "title": "Holy Planet of Ixth (LAW)",
+        "elect": "Elect (non-Home System) Planet",
+        "resolutions": {
+            "for": "This planet provide votes even when exhausted, but may not produce units."
+        }
+    },
+    {
+        "title": "New Galactic Order",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Each player must immediately scuttle units so that the total combined resource value of all his units do not exceed 25. All players that that voted for this agenda receive one Action Card.",
+            "against": "All players that voted for this agenda gain +2 to all combat rolls for the remainder of this round."
+        }
+    },
+    {
+        "title": "Prosperity is Stability",
+        "elect": "Elect (non-Home) System",
+        "resolutions": {
+            "for": "Place a Colony on every planet in the elected system, along with 3 Trade Goods (that work as Natural Wealth). Then refresh those planets. This system may not be activated by any player for the remainder of this round."
+        }
+    },
+    {
+        "title": "Grand Accusation",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": ""
+        }
+    },
+    {
+        "title": "Anti-Piracy Task Force",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Each player must scuttle two of their non-Fighter ships and half of their Fighters (round down).",
+            "against": "Discard all but one of the Trade Goods currently present in the Trade Agreements and Trade Goods areas."
+        }
+    },
+    {
+        "title": "Build Monument (LAW)",
+        "elect": "Elect (non-Home System) Planet",
+        "resolutions": {
+            "for": "The elected planet immediately gains a Colony. While this law is active, the player controlling this planet gains 1 victory point (but loses it when losing control of the planet)."
+        }
+    },
+    {
+        "title": "Closing the Wormholes (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "In order to move through wormholes, ships must start their movement on the entry wormhole and end their movement at the exit wormhole. Wormholes may not be used during secondary of Warfare.",
+            "against": "Players must scuttle 1 non-Fighter ship from earch of their fleets in systems containing wormholes."
+        }
+    },
+    {
+        "title": "Code of Honor (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Whitdrawals and retreats may not be called during the first round of combat. The player with the most combat dice during each combat round may not roll more combat dice than the opponent (but may choose which ones to roll).",
+            "against": "For the remainted of the round, all tactical retreats and withdrawals are free."
+        }
+    },
+    {
+        "title": "Colonial Redistribution",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "The player(s) with the most non-Home System planets must choose one of their planets and destroy all units on that planet. The player with the fewest non-Home System planets (Speaker breaks tie) may then place two free Ground Forces on affected planets and assume control over it.",
+            "against": "Discard this card."
+        }
+    },
+    {
+        "title": "Compensated Disarmament",
+        "elect": "Elect Planet",
+        "resolutions": {
+            "for": "All ground units on this planet are destroyed, but the planet's controller recieves twice the cost of each destroyed unit as Trade Goods. The controller retains control of the planet."
+        }
+    },
+    {
+        "title": "Conscription Campaign",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Players that voted for this agenda may immediately purchase Ground Forces for 0.5 influence each, and place them at planets they control. No more than three Ground Forces may be placed on each planet.",
+            "against": "Everyone that voted for this agenda must exgaust a planet, if able."
+        }
+    },
+    {
+        "title": "Conventions of War (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Planets that contain Space Dock may not be bombarded.",
+            "against": "Each played that voted against this law must immediately exhaust one of his Space Docks outside his Home System."
+        }
+    },
+    {
+        "title": "Core Stability",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "During each Status Phase, all normally recieved Action Cards are drawn and placed face up on the table. The player with the highest total influence may choose his action Cards first, followed by the played with the second-most total influence, etc.",
+            "against": "No Action Cards are drawn during this Status Phase."
+        }
+    },
+    {
+        "title": "Defensive Mobilizations",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "All players may, in normal order starting with the Speaker, conduct a free Tactical Action by activating their Home System (even if the system is already activated, but then Space Docks are immediately exhausted). In the movement step, all units (even in activated systems) gain sufficient and independent movement range to their respective Home Systems.",
+            "against": "Exhaust Home System planets."
+        }
+    },
+    {
+        "title": "Duranium Armor (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Units no longer lose combat dice when using the sustain damage ability.",
+            "against": "Immediately repair all damaged units."
+        }
+    },
+    {
+        "title": "Economic Revitalization",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "The elected player recieves one Trade Good from the Trade Goods area of each opponent (if able), and may also add 1 Trade Good to each of his active Trade Agreements."
+        }
+    },
+    {
+        "title": "Fighter Tax (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Fighter units now cost 1 resource each.",
+            "against": "Each player must immediately scuttle all but 10 of his fighter units."
+        }
+    },
+    {
+        "title": "Fleet Restrictions (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Fleets may not contain more than 3 of a single ship type (including Fighters).",
+            "against": "For each system where a player has with more than 3 ships of the same type, the owner must pay 1 Trade Good or destroy all excess ships."
+        },
+        "comment": "Var troligtvis felskriven i SA, la till more och where på rätt ställen."
+    },
+    {
+        "title": "Free Trade (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "When the Trade Strategy is played, players may either be exemp from paying a Command Counter for the secondary ability, or place 1 extra Trade Good on each of their active Trade Agreements.",
+            "against": "All players must discard two Trade Goods from their Trade Goods area."
+        }
+    },
+    {
+        "title": "Herald of the Empire (LAW)",
+        "elect": "Elect Dreadnought",
+        "resolutions": {
+            "for": "The elected Dreadnought now has a base movement of 2 (but is not modified by Admirals), 1 extra sustain damage and +2 capacity. During each Status Phase, the owner may place 1 Shock Troop on this ship (if able)."
+        }
+    },
+    {
+        "title": "Hope’s End Training Ground",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "The player controlling Hope's End may immediately place 1 Ground Force and 2 Shock Troops there.",
+            "against": "Refresh Hope's End."
+        }
+    },
+    {
+        "title": "Intergalactic Commerce",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Each player gains 3 Trade Goods for eadch system he controls containing at least one wormhole*. Add 1 Trade Goods to all active Trade Agreements.",
+            "against": "Discard 3 Trade Goods present on each active Trade Agreements, if able"
+        },
+        "comment": "*Including Unstable Wormholes, but excluding D-wormholes."
+    },
+    {
+        "title": "Legislative Conference",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Cancel the effects of all other agendas in this round of voring. Openly draw as many Political Cards as there are players. The player with the most votes for this agenda may then choose one of the drawn agendas and choose the outcome (count as 10 votes). Then the player with the second most votes may do the same, and so on until all players with votes on this agenda has chosen one outcome.",
+            "against": "Discard this card."
+        }
+    },
+    {
+        "title": "Limits to Individual Power (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "The maximum hand-size of Action Cards is reduced to 3 (except for Yssaril).",
+            "against": "All players must discard one random Action Card, if able."
+        }
+    },
+    {
+        "title": "Lord of the Aeon Throne",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "The player who controls Mecatol Rex gains 1 victory point. He must then immediately move all ships from his Home System to Mecatol Rex (ships in excess of Fleet Supply are destroyed).",
+            "against": "Exhaust Mecatol Rex."
+        }
+    },
+    {
+        "title": "Massive Dig (LAW)",
+        "elect": "Elect Planet",
+        "resolutions": {
+            "for": "The elcted planet now has 0 influence (law). Place a Refinery and 10 Trade Goods on the planet, treated like Natural Wealth. Remove three Ground Forces and one PDS unit from the planet, if able."
+        }
+    },
+    {
+        "title": "Media War (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "In order for unexhausted planets to yield votes during Assembly, the owner must choose and exhaust them prior to revealing votes.*",
+            "against": "Each player may spend influence to gain 1 Trade Good per influence spent."
+        },
+        "comment": "*Winnu (planet) must also be exhausted in order to yield votes, but provides votes even if it was exhausted from before."
+    },
+    {
+        "title": "Minister of Annihilation (LAW)",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "The elcted player may spend a Command Counter from his Strategy Allocation area to gain two automatic hits before the first round of any Space Battle in which he participates, or as part of bombardement. These hits are applied immediately, with no return fire allowed by the casualties taken."
+        }
+    },
+    {
+        "title": "Minister of Industry (LAW)",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "The elcted player recieves 2 Trade Goods whenever a Space Dock is built. The elected player does not have to pay a Command Counter to use the secondary ability of the Production Strategy."
+        }
+    },
+    {
+        "title": "Minister of Technology (LAW)",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "At the start of each Strategy Phase, you may choose on Technology (that you did not choose last round) held by another player, and then choose either effect a) or b) for the remainted of the round: a) you may also utilize its effect b) no player may use its effect"
+        }
+    },
+    {
+        "title": "Necessary Bureaucracy (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Instead of claming an objective as part of the primary ability of the Bureacracy Strategy Card, the holder may remove a flag from a claimed Objective* and retain the victory point. This Objective may now be claimed again.",
+            "against": "Exhaust Mecatol Rex."
+        },
+        "comment": "*Objectives related to holding Technology Advances may not be chosen"
+    },
+    {
+        "title": "Neutrality Pact (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "In order to activate a system that contain enemy units, players must spend 2 influence.",
+            "against": "Each player must place a Command Counter from his reinforcements onto one of his unactivated systems containing a Space Dock (if able)."
+        }
+    },
+    {
+        "title": "Official Sanction",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "The elctedf player may not execute invasions (or bombardements), or execute the secondary ability of any Strategy Card this round. He may also not place Trade Goods on his Trade Agreements for the remainder of the round."
+        }
+    },
+    {
+        "title": "Planetary Conscription (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Each time a player takes control of a neutral planet, he may place one Ground Force on that planet.",
+            "against": "No player may execute a plantery landing on a neutral planet for the remainder of this round."
+        }
+    },
+    {
+        "title": "Planetary Government Dissidence",
+        "elect": "Elect Non-Home System Planet",
+        "resolutions": {
+            "for": "Turn the elected planet neutral (and remove all units). The player with the most votes on this planet may then place one Ground Force and claim the planet exhausted, and take one random Action Card from the previous owner."
+        }
+    },
+    {
+        "title": "Planetary Security (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "For each planet without ground units, the controller may place 1 Ground Force there.",
+            "against": "Non-Home System planets containing no ground units immediately revert to neutral status."
+        }
+    },
+    {
+        "title": "Political Focus (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "When a player chooses the Assembly Strategy Card, he immediately gains 1 Command Counter or 2 Trade Goods.",
+            "against": "At the end of this round of Assembly, draw the top card of the Political Deck and immediately resolve its agenda (conduct a new round of voting with replenished votes)."
+        }
+    },
+    {
+        "title": "Recognize Accomplishments",
+        "elect": "Elect Public Objective",
+        "resolutions": {
+            "for": "Remove all Control Markers from the elected Objective. Players who have already fulfilled the elcted Objective may fulfill it again. Those players do not lose any points, and must follow normal rules when fulfilling the Objective again."
+        }
+    },
+    {
+        "title": "Redefining War Crimes (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "When a player fires a PDS (space cannon) at an opposing fleet, Trade Agreements are broken as if a Space Battle was initiated by the players using the Space Cannon ability.",
+            "against": "Players may not use their PDS units this turn, except to defend during planetary invasions."
+        }
+    },
+    {
+        "title": "Regressive Rhetoric (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "The base cost for Technologies purchased through the secondary ability of the Technology Strategy Card increases to 7. Playerrs who do not execute any abilities of the Technology Card may instead draw one Action Card.",
+            "against": "All players must immediately discard one Action Card, if able."
+        }
+    },
+    {
+        "title": "Reign of Absolute Power (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "While controlling enemy Home Systems, gain one victory point for each.",
+            "against": "Players must immediately move all their fleets in enemy Home Systems to their own Home System (ships in excess of Fleet Supply are scuttled immediately). If enemy ships are present, conduct a Space Battle."
+        }
+    },
+    {
+        "title": "Relics of the past",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "The elected player immediately recieves 5 Trade Goods."
+        }
+    },
+    {
+        "title": "Rise of the Prophet",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "After this Action PHase, conduct Invsaion Combats with 2 attaching Ground Forces against planets situated in activated systems. If the attackers win, the planet turns neutral and gains Hostile Locals of strength 2 on  it.",
+            "against": "Skip the next \"refresh planets\" step during Status Phase."
+        }
+    },
+    {
+        "title": "Sector Quarantine",
+        "elect": "Elect System",
+        "resolutions": {
+            "for": "No ships may tracerse the borders of this system during the next round of play. If this system gained over 10 votes more than any other system, the quarantine will take effect immediately (and last throughout the next round)."
+        }
+    },
+    {
+        "title": "Seed of an Empire",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "The player or players with the most victory points gain 1 victory point.",
+            "against": "The player or players with the fewest victory points gain 1 victory point."
+        }
+    },
+    {
+        "title": "Shifting Values",
+        "elect": "Elect Publict Objective",
+        "resolutions": {
+            "for": "Remove the selected objective from the game and replace by a new Stage 1 Public Objective. Players whom have already claimed the replaced objective loses the associated number of victory points."
+        }
+    },
+    {
+        "title": "Shunned Methods (LAW)",
+        "elect": "Elect Strategy Card",
+        "resolutions": {
+            "for": "Place 1 Hit Counter on the elected Strategy Card. In order to select this card during Strategy Phase, the player must spend 5 influence."
+        }
+    },
+    {
+        "title": "Space-Time Anomalies (LAW)",
+        "elect": "Elect Border*",
+        "resolutions": {
+            "for": "The two borders with the most votes are now ipassable for units (place Hit-Counters to illustrate this). At the end of each round, a random player may move one of these effects to another border of choice.",
+            "against": "*Wormholes are not eligible."
+        }
+    },
+    {
+        "title": "Smart Surveillance & Prediction Network (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Players may discard three Action Cards to use the effects of a Sabotage card. During their turns, players may spend 8 resources of influence (or a mix thereof) to choose a discarded Action or Political card and add it to their hand.",
+            "against": "Discard this card."
+        }
+    },
+    {
+        "title": "Supported Expansion",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Starting with the Speaker, each player may place 1 free Ground Force on 1 uncontrolled (neutral) planet of his choice. Domain Counters are removed.",
+            "against": "Each controlled planet containing no units must either be exhausted or turned to neutral status."
+        }
+    },
+    {
+        "title": "Technological Jihad (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Each time a player acquires a Technology, he must either destroy two resources worth of his units or lose one Technology he held from before (removing a prerequisite Technology does not affect other Technologies).",
+            "against": "Playters must exhaust a planet (if able) for teach non-starting Technology he has."
+        }
+    },
+    {
+        "title": "Technology Tarrifs (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Technology Specialties have no effect. Technology Advances are purchased by spending influence instead of resources.",
+            "against": "Green and Yellow Technologies cannot be acquired for the remainder of this round."
+        }
+    },
+    {
+        "title": "The Crown of Emphidia (LAW)",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "Give this card to the elected player. He immediately recieves 1 victory point. A player that wins an Invsaion Combat against this player immediately claims this card and recieves 1 victory point. If a player ever loses this card, he loses 1 victory point."
+        }
+    },
+    {
+        "title": "Unconventional Weapons (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "All Dreadnoughts and War Suns recieves -2 on all combat rolls.",
+            "against": "All players must choose and exhaust one of their planets for each Dreadnought and War Sun they have in play, if able."
+        }
+    },
+    {
+        "title": "Warship Commission",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Each player may immediately gain one Dreadnough unit (for free) at one of his Space Docks",
+            "against": "The cost of each Cruiser, dreadnought and War Sun is increased by 2 resources for the remainder of this round."
+        }
+    },
+    {
+        "title": "Wormhole Research (LAW)",
+        "defaultOptions": true,
+        "resolutions": {
+            "for": "Each wormhole now has a blue technology specialty. At the end of each round, the player controlling more (non-D) wormholes than any other player gains 1 victory point; then players must destroy one of their non-Fighter ships in each fleet present with (non-D) wormholes.",
+            "against": "Wormholes may not be used for the remainder of the round."
+        }
+    }
+]
