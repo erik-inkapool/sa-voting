@@ -56,7 +56,7 @@ describe('Cardlist', () => {
         expect(renderedCards.props().title).toEqual(expectedTitle);
     });
 
-    const shallowCardList = ({cards=[], updateCardTitle=() => {}, deleteCard=() => {}, addCard=() => {}, startVote=() => {}}) => {
-        return shallow(<CardList cards={cards} updateCardTitle={updateCardTitle} deleteCard={deleteCard} addCard={addCard} startVote={startVote} />);
+    const shallowCardList = ({cards=[], updateCardTitle=() => {}, deleteCard=() => {}, addCard=() => {}, startVote=() => {}, updateCard=() => {}}) => {
+        return shallow(<CardList cards={cards} updateCardTitle={updateCardTitle} deleteCard={deleteCard} addCard={addCard} startVote={startVote} updateCard={updateCard} />);
     };
 });

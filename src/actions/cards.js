@@ -26,6 +26,8 @@ export const addCard = createAction('ADD_CARD', () => {
 
 export const deleteCard = createAction('DELETE_CARD', id => ({ id }));
 
+export const updateCard = createAction('UPDATE_CARD', (id, card) => ({ id, card }));
+
 export const changeTitle = createAction('CHANGE_TITLE', (id, title) => ({ id, title }));
 
 export const updateOptionName = createAction('UPDATE_OPTION_NAME', (id, name) => ({ id, name }));

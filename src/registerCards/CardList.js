@@ -13,7 +13,7 @@ export const AddCardButton = styled(PrimaryButton)`
     text-align: center;
 `;
 
-const CardList = ({cards, updateCardTitle, deleteCard, addCard, startVote}) => {
+const CardList = ({cards, updateCardTitle, deleteCard, addCard, startVote, updateCard}) => {
     const StartVoteButton = styled(SuccessButton)`
         display: block;
         text-align: center;
@@ -23,6 +23,7 @@ const CardList = ({cards, updateCardTitle, deleteCard, addCard, startVote}) => {
         return <Card
             delete={deleteCard}
             updateTitle={updateCardTitle}
+            updateCard={updateCard}
             key={card.id}
             cardId={card.id}
             title={card.title} />;
@@ -50,6 +51,7 @@ CardList.propTypes = {
     updateCardTitle: PropTypes.func.isRequired,
     deleteCard: PropTypes.func.isRequired,
     addCard: PropTypes.func.isRequired,
+    updateCard: PropTypes.func.isRequired,
     startVote: PropTypes.func.isRequired
 }
 

@@ -27,7 +27,7 @@ const DeletionActionLink = styled.a`
     line-height: 0.6;
 `;
 
-const Option = ({name, id, votes, updateVotes, deleteOption, updateName}) => {
+const Option = ({name, id, votes, updateVotes, deleteOption, updateName, canBeDeleted}) => {
     const updateNameHook = event => updateName(id, event.target.value);
 
     let option;
@@ -45,7 +45,7 @@ const Option = ({name, id, votes, updateVotes, deleteOption, updateName}) => {
         <FlexContainer>
             <SmallInput onChange={updateVote} value={votes} type="number" />
             {option}
-            <DeletionActionLink onClick={deleteOptionHook}>&times;</DeletionActionLink>
+            {canBeDeleted ? <DeletionActionLink onClick={deleteOptionHook}>&times;</DeletionActionLink> : ''}
         </FlexContainer>
     );
 }

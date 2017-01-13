@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 
-import { addCard, deleteCard, changeTitle } from '../actions/cards';
+import { addCard, deleteCard, updateCard, changeTitle } from '../actions/cards';
 import { navigate } from '../actions/route';
 import CardList from './CardList';
 
@@ -11,6 +11,10 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
     updateCardTitle: (id, title) => {
         dispatch(changeTitle(id, title));
+    },
+
+    updateCard: (id, card) => {
+        dispatch(updateCard(id, card));
     },
 
     addCard: () => {

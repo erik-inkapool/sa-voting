@@ -10,6 +10,7 @@ const Vote = ({cards, updateVotes, deleteOption, updateOptionName, addOption, to
     const VoteButton = styled(SuccessButton) `
         display: block;
         text-align: center;
+        background-color: green;
    `;
 
     return (
@@ -19,9 +20,7 @@ const Vote = ({cards, updateVotes, deleteOption, updateOptionName, addOption, to
                 {
                     cards.map(card => <Card
                         key={card.id}
-                        id={card.id}
-                        title={card.title}
-                        options={card.options}
+                        card={card}
                         updateVotes={updateVotes}
                         deleteOption={deleteOption}
                         updateOptionName={updateOptionName}

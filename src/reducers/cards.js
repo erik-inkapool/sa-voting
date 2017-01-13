@@ -24,7 +24,8 @@ const option = (state = {}, action) => {
             return {
                 id: payload.id,
                 name: '',
-                votes: 0
+                votes: 0,
+                canBeDeleted: true
             }
         default:
             return state;
@@ -47,6 +48,12 @@ const card = (state = {}, action) => {
             return Object.assign({}, state, {
                 title: payload.title
             });
+        case 'UPDATE_CARD':
+            if (state.id !== payload.id) {
+                return state;
+            }
+
+            return Object.assign({}, state, payload.card);
         case 'UPDATE_OPTION_NAME':
             state.options = state.options.map(o => option(o, action));
             return state;
@@ -54,7 +61,7 @@ const card = (state = {}, action) => {
             state.options = state.options.map(o => option(o, action));
             return state;
         case 'ADD_OPTION':
-            if(payload.cardId !== state.id) {
+            if (payload.cardId !== state.id) {
                 return state;
             }
             state.options = [...state.options, option(undefined, action)];
@@ -74,6 +81,8 @@ const cards = (state = [], action) => {
                 ...state,
                 card(undefined, action)
             ];
+        case 'UPDATE_CARD':
+            return state.map(c => card(c, action));
         case 'CHANGE_TITLE':
             return state.map(c => card(c, action));
         case 'DELETE_CARD':

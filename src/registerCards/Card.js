@@ -39,8 +39,8 @@ const Alternative = styled.li`
     border-bottom: 1px solid white;
     border-left: 1px solid white;
     border-right: 1px solid white;
-    font-weight: ${ props => props.active ? 700 : 'inherit' };
-    background: ${ props => props.active ? 'blue' : 'inherit' };
+    font-weight: ${ props => props.active ? 700 : 'inherit'};
+    background: ${ props => props.active ? 'blue' : 'inherit'};
 `
 
 export default class Card extends Component {
@@ -80,7 +80,7 @@ export default class Card extends Component {
         });
 
         this.handleChange = this.handleChange.bind(this);
-        this.handleBlur = this.exitEditMode.bind(this);
+        this.exitEditMode = this.exitEditMode.bind(this);
         this.enterEditMode = this.enterEditMode.bind(this);
         this.handleKeyUp = this.handleKeyUp.bind(this);
         this.handleCardClick = this.handleCardClick.bind(this);
@@ -118,8 +118,17 @@ export default class Card extends Component {
         this.setState(prevState => Object.assign({}, prevState, {
             editing: false
         }));
-        this.props.updateTitle(this.props.cardId, this.state.title);
-        // this.props.updateCard(this.props.cardId, this.state.card);
+
+        let activeCard = this.state.cards.length > this.state.index ? this.state.cards[this.state.index] : null;
+        console.log(activeCard);
+        console.log(this.state.title);
+        console.log(activeCard.title);
+        if (activeCard && activeCard.title.toUpperCase() === this.state.title.toUpperCase()) {
+            this.props.updateCard(this.props.cardId, Object.assign({}, activeCard, { title: this.state.title }));
+        } else {
+            this.props.updateTitle(this.props.cardId, this.state.title);
+        }
+
     }
 
     enterEditMode() {
