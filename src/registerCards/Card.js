@@ -20,6 +20,29 @@ const ButtonContainer = styled.div`
     margin-left: 10px;
 `;
 
+const ClickAbleAlternative = styled.a`
+    display: block;
+`
+
+const AlternativesContainer = styled.ul`
+    position: absolute;
+    width: 100%;
+    background: darkblue;
+`
+
+const InputContainer = styled.div`
+    position: relative;
+`
+
+const Alternative = styled.li`
+    padding: 5px;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    font-weight: ${ props => props.active ? 700 : 'inherit' };
+    background: ${ props => props.active ? 'blue' : 'inherit' };
+`
+
 export default class Card extends Component {
     constructor(props) {
         super(props);
@@ -31,8 +54,11 @@ export default class Card extends Component {
             mark: {
                 input: 0,
                 card: 0
-            }
+            },
+            index: 0
         };
+
+        this.maxCards = 5;
 
         this.fuse = new Fuse(politicalCardData, {
             keys: [{
@@ -54,9 +80,10 @@ export default class Card extends Component {
         });
 
         this.handleChange = this.handleChange.bind(this);
-        this.handleBlur = this.handleBlur.bind(this);
+        this.handleBlur = this.exitEditMode.bind(this);
         this.enterEditMode = this.enterEditMode.bind(this);
         this.handleKeyUp = this.handleKeyUp.bind(this);
+        this.handleCardClick = this.handleCardClick.bind(this);
     }
 
     onDelete() {
@@ -67,23 +94,27 @@ export default class Card extends Component {
         let search = event.target.value;
         let cards = this.fuse.search(search);
         let mark = { input: search.length, card: 0 };
-        if (cards.length && this.state.mark.input < search.length) {
-            let firstFuzzyCardTitle = _.head(cards).title;
-            if (firstFuzzyCardTitle.toUpperCase().startsWith(search.toUpperCase())) {
-                mark.input = search.length;
-                mark.card = firstFuzzyCardTitle.length;
-                search = firstFuzzyCardTitle;
-            }
-        }
 
-        this.setState(prevState => Object.assign({}, prevState, {
-            title: search,
-            cards,
-            mark
-        }));
+        this.setState(prevState => {
+            if (cards.length && prevState.mark.input < search.length) {
+                let firstFuzzyCardTitle = _.head(cards).title;
+                if (firstFuzzyCardTitle.toUpperCase().startsWith(search.toUpperCase())) {
+                    mark.input = search.length;
+                    mark.card = firstFuzzyCardTitle.length;
+                    search = firstFuzzyCardTitle;
+                }
+            }
+
+            return Object.assign({}, prevState, {
+                title: search,
+                cards,
+                mark,
+                index: 0
+            });
+        });
     }
 
-    handleBlur() {
+    exitEditMode() {
         this.setState(prevState => Object.assign({}, prevState, {
             editing: false
         }));
@@ -93,14 +124,63 @@ export default class Card extends Component {
 
     enterEditMode() {
         this.setState(prevState => Object.assign({}, prevState, {
-            editing: true
+            editing: true,
+            mark: { input: 0, card: prevState.title.length },
+            cards: this.fuse.search(prevState.title),
+            index: 0
         }));
     }
 
-    handleKeyUp(event) {
-        if (event.key === 'Enter') {
-            this.handleBlur();
+    moveIndex(step = 0) {
+        this.setState(prevState => {
+            return this.getStateWithNewIndex(prevState, prevState.index + step);
+        });
+    }
+
+    setIndex(index = 0) {
+        this.setState(prevState => this.getStateWithNewIndex(prevState, index));
+    }
+
+    getStateWithNewIndex(prevState, index) {
+        let newIndex = index;
+        if (newIndex < 0 || newIndex >= Math.min(prevState.cards.length, this.maxCards)) {
+            newIndex = prevState.index;
         }
+
+        let activeCard = prevState.cards[newIndex];
+        let mark = prevState.mark;
+        if (newIndex !== prevState.index) {
+            mark = {
+                input: 0,
+                card: activeCard ? activeCard.title.length : 0
+            }
+        }
+
+        return Object.assign({}, prevState, {
+            index: newIndex,
+            title: activeCard.title,
+            mark
+        });
+    }
+
+    handleKeyUp(event) {
+        if (this.state.editing) {
+            switch (event.key) {
+                case 'Enter':
+                    this.exitEditMode();
+                    break;
+                case 'ArrowDown':
+                    this.moveIndex(1);
+                    break;
+                case 'ArrowUp':
+                    this.moveIndex(-1);
+                    break;
+            }
+        }
+    }
+
+    handleCardClick(index) {
+        return () => this.setIndex(index);
     }
 
     renderCardTitle() {
@@ -112,19 +192,23 @@ export default class Card extends Component {
     }
 
     renderEditableCardTitle() {
+        var activeCardAlternatives = _.take(this.state.cards, this.maxCards);
+        var cardAlternatives = activeCardAlternatives.map((card, cardIndex) =>
+            <Alternative active={this.state.index === cardIndex} key={card.title}>
+                <ClickAbleAlternative onTouchStart={this.handleCardClick(cardIndex)} onMouseDown={this.handleCardClick(cardIndex)}>{card.title}</ClickAbleAlternative>
+            </Alternative>);
+
         return (
-            <div>
+            <InputContainer>
                 <input
                     ref="titleEdit"
                     type="text"
                     value={this.state.title}
                     onChange={this.handleChange}
-                    onBlur={this.handleBlur}
+                    onBlur={this.exitEditMode}
                     onKeyUp={this.handleKeyUp} />
-                <ul>
-                    {_.take(this.state.cards, 5).map(card => <li key={card.title}>{card.title}</li>)}
-                </ul>
-            </div>
+                {cardAlternatives.length ? <AlternativesContainer>{cardAlternatives}</AlternativesContainer> : ''}
+            </InputContainer>
         );
     }
 
