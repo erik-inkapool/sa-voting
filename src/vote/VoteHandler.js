@@ -4,17 +4,12 @@ import _ from 'lodash';
 import { updateOptionName, addOption, deleteOption, updateVotes } from '../actions/cards';
 import { navigate } from '../actions/route';
 import Vote from './Vote';
-
-const getTotalVotes = cards => {
-    return _.reduce(cards, (totalVotes, card) => 
-        _.reduce(card.options, (totalVotes, option) => 
-            option.votes + totalVotes, totalVotes), 0);
-};
+import totalVotes from '../utility/totalVotes';
 
 const mapStateToProps = state => ({
     cards: state.cards,
 
-    totalVotes: getTotalVotes(state.cards)
+    totalVotes: totalVotes(state.cards)
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -24,7 +19,11 @@ const mapDispatchToProps = dispatch => ({
 
     deleteOption: id => dispatch(deleteOption(id)),
 
-    updateVotes: (id, votes) => dispatch(updateVotes(id, votes))
+    updateVotes: (id, votes) => dispatch(updateVotes(id, votes)),
+
+    finish: () => {
+        dispatch(navigate('VOTE_COMPLETE'));
+    }
 });
 
 const VoteHandler = connect(mapStateToProps, mapDispatchToProps)(Vote);

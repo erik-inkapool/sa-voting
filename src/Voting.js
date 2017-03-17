@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react';
 import Background from './utility/Background';
 import CardListHandler from './registerCards/CardListHandler';
 import VoteHandler from './vote/VoteHandler';
+import VoteCompleteHandler from './voteComplete/VoteCompleteHandler';
 
 const VotingApp = ({route}) => {
   let activeRoute;
@@ -9,6 +10,9 @@ const VotingApp = ({route}) => {
     case 'VOTE':
       activeRoute = <VoteHandler />;
       break;
+    case 'VOTE_COMPLETE':
+      activeRoute = <VoteCompleteHandler />;
+      break;      
     default:
       activeRoute = <CardListHandler />;
       break;
