@@ -1,5 +1,12 @@
 [
     {
+        "title": "Voice of the council",
+        "elect": "Elect Player",
+        "resolutions": {
+            "for": "Elected player gains a victory point (at end of round)"
+        }
+    },
+    {
         "title": "An Aeon of Legend (LAW)",
         "resolutions": {
             "for": "Each leader now possesses the abilities of all Leader types. When executing Leaders, players must exhaust of lose control of two additional planets. ",
@@ -155,9 +162,9 @@
     },
     {
         "title": "Desperate Measures",
+        "elect": "Elect (non-Home) System",
         "resolutions": {
-            "for": "Elect (non-Home) System",
-            "against": "Remove all Command Counters from the elected system, exhaust planets and Space Docks in the system."
+            "for": "Remove all Command Counters from the elected system, exhaust planets and Space Docks in the system."
         }
     },
     {
