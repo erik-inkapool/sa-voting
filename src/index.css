@@ -1,12 +1,18 @@
-html {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body, html, #root  {
+body,
+html,
+#root {
   height: 100%;
 }
 
