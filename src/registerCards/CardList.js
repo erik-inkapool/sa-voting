@@ -13,46 +13,58 @@ export const AddCardButton = styled(PrimaryButton)`
     text-align: center;
 `;
 
-const CardList = ({cards, updateCardTitle, deleteCard, addCard, startVote, updateCard}) => {
-    const StartVoteButton = styled(SuccessButton)`
+const CardList = ({
+  cards,
+  updateCardTitle,
+  deleteCard,
+  addCard,
+  startVote,
+  updateCard
+}) => {
+  const StartVoteButton = styled(SuccessButton)`
         display: block;
         text-align: center;
    `;
 
-    const Cards = cards.map((card, index) => {
-        return <Card
-            delete={deleteCard}
-            updateTitle={updateCardTitle}
-            updateCard={updateCard}
-            key={card.id}
-            cardId={card.id}
-            title={card.title} />;
-    });
-
+  const Cards = cards.map((card, index) => {
     return (
-        <div>
-            <Container>
-                <Title>Select cards</Title>
-                {Cards}
-                <AddCardButton onClick={addCard}>Add Another</AddCardButton>
-            </Container>
-            <ButtonContainer>
-                <StartVoteButton onClick={startVote}>Start voting</StartVoteButton>
-            </ButtonContainer>
-        </div>
+      <Card
+        deleteCard={() => deleteCard(card.id)}
+        updateTitle={updateCardTitle}
+        updateCard={updateCard}
+        key={card.id}
+        cardId={card.id}
+        title={card.title}
+      />
     );
+  });
+
+  return (
+    <div>
+      <Container>
+        <Title>Select cards</Title>
+        {Cards}
+        <AddCardButton onClick={addCard}>Add Another</AddCardButton>
+      </Container>
+      <ButtonContainer>
+        <StartVoteButton onClick={startVote}>Start voting</StartVoteButton>
+      </ButtonContainer>
+    </div>
+  );
 };
 
 CardList.propTypes = {
-    cards: PropTypes.arrayOf(PropTypes.shape({
-        id: PropTypes.string.isRequired,
-        title: PropTypes.string.isRequired
-    }).isRequired).isRequired,
-    updateCardTitle: PropTypes.func.isRequired,
-    deleteCard: PropTypes.func.isRequired,
-    addCard: PropTypes.func.isRequired,
-    updateCard: PropTypes.func.isRequired,
-    startVote: PropTypes.func.isRequired
-}
+  cards: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired
+    }).isRequired
+  ).isRequired,
+  updateCardTitle: PropTypes.func.isRequired,
+  deleteCard: PropTypes.func.isRequired,
+  addCard: PropTypes.func.isRequired,
+  updateCard: PropTypes.func.isRequired,
+  startVote: PropTypes.func.isRequired
+};
 
 export default CardList;
