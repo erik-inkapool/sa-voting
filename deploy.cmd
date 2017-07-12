@@ -110,8 +110,8 @@ call :SelectNodeVersion
   call :ExecuteCmd !NPM_CMD! run build
   IF !ERRORLEVEL! NEQ 0 goto error
   echo " - Deploying frontend files..."
-  mkdir .\static
-  xcopy .\build ..\static /Y
+  call :ExecuteCmd xcopy .\build ..\static /Y
+  IF !ERRORLEVEL! NEQ 0 goto error
   popd
   echo "Frontend build done."
   echo ""
@@ -126,9 +126,11 @@ call :SelectNodeVersion
   call :ExecuteCmd !NPM_CMD! run build
   IF !ERRORLEVEL! NEQ 0 goto error
   echo " - Deploying node_modules..."
-  xcopy .\node_modules .. /Y
+  call :ExecuteCmd xcopy .\node_modules .. /Y
+  IF !ERRORLEVEL! NEQ 0 goto error
   echo " - Deploying backend files..."
-  xcopy .\build .. /Y
+  call :ExecuteCmd xcopy .\build .. /Y
+  IF !ERRORLEVEL! NEQ 0 goto error
   popd
   echo "Backend build done."
 
