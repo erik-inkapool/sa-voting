@@ -82,6 +82,9 @@ export default class CardTitleHandler extends Component {
       case 'ArrowUp':
         this.moveIndex(-1);
         break;
+      default:
+        // do nothing
+        break;
     }
   }
 
