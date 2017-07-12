@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 var fs = require('fs');
+var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 var nodeModules = {};
 fs
@@ -29,7 +30,8 @@ module.exports = {
       banner: 'require("source-map-support").install();',
       raw: true,
       entryOnly: false
-    })
+    }),
+    new UglifyJSPlugin({ sourceMap: true })
   ],
   module: {
     rules: [

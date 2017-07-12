@@ -1,10 +1,11 @@
-import React, { PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React from 'react';
 import Background from './utility/Background';
 import CardListHandler from './registerCards/CardListHandler';
 import VoteHandler from './vote/VoteHandler';
 import VoteCompleteHandler from './voteComplete/VoteCompleteHandler';
 
-const VotingApp = ({route}) => {
+const VotingApp = ({ route }) => {
   let activeRoute;
   switch (route) {
     case 'VOTE':
@@ -12,7 +13,7 @@ const VotingApp = ({route}) => {
       break;
     case 'VOTE_COMPLETE':
       activeRoute = <VoteCompleteHandler />;
-      break;      
+      break;
     default:
       activeRoute = <CardListHandler />;
       break;
