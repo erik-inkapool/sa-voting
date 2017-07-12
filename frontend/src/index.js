@@ -10,6 +10,8 @@ import reducers from './reducers';
 
 import syncService from './syncService';
 
+syncService.start();
+
 let store = createStore(reducers);
 
 ReactDOM.render(
