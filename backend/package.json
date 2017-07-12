@@ -25,6 +25,6 @@
   "scripts": {
     "start": "node server.js",
     "start:dev": "gulp",
-    "build": "webpack -p --progress --profile"
+    "build": "node_modules/.bin/webpack -p --progress --profile"
   }
 }
