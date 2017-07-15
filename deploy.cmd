@@ -126,7 +126,7 @@ call :SelectNodeVersion
   call :ExecuteCmd !NPM_CMD! run build
   IF !ERRORLEVEL! NEQ 0 goto error
   echo " - Deploying node_modules..."
-  call :ExecuteCmd xcopy .\node_modules .. /Y
+  call :ExecuteCmd xcopy .\node_modules ..\node_modules /Y
   IF !ERRORLEVEL! NEQ 0 goto error
   echo " - Deploying backend files..."
   call :ExecuteCmd xcopy .\build .. /Y

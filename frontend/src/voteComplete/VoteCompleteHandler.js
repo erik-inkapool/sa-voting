@@ -1,18 +1,19 @@
 import { connect } from 'react-redux';
 
+import { deleteAllCards } from '../actions/cards';
 import { navigate } from '../actions/route';
 import VoteComplete from './VoteComplete';
-import totalVotes from '../utility/totalVotes';
+import apiService from '../api/apiService';
 
 const mapStateToProps = state => ({
-  cards: state.cards,
-
-  totalVotes: totalVotes(state.cards)
+  cards: state.cards
 });
 
 const mapDispatchToProps = dispatch => ({
-  edit: () => {
-    dispatch(navigate('VOTE'));
+  startOver: () => {
+    dispatch(deleteAllCards());
+    dispatch(navigate('REGISTER_CARDS'));
+    apiService.reset();
   }
 });
 

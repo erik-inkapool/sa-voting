@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import Card from './Card';
 import Title from '../utility/titles';
-import { PrimaryButton, SuccessButton } from '../utility/Buttons';
+import { PrimaryButton, SuccessButton, Button } from '../utility/Buttons';
 import { Container, ButtonContainer } from '../utility/Container';
 
 export const AddCardButton = styled(PrimaryButton)`
@@ -14,19 +14,26 @@ export const AddCardButton = styled(PrimaryButton)`
     text-align: center;
 `;
 
+const StartVoteButton = styled(SuccessButton)`
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+`;
+
+const ResetButton = styled(Button)`
+    display: block;
+    text-align: center;
+`;
+
 const CardList = ({
   cards,
   updateCardTitle,
   deleteCard,
   addCard,
   startVote,
+  reset,
   updateCard
 }) => {
-  const StartVoteButton = styled(SuccessButton)`
-        display: block;
-        text-align: center;
-   `;
-
   const Cards = cards.map((card, index) => {
     return (
       <Card
@@ -49,6 +56,7 @@ const CardList = ({
       </Container>
       <ButtonContainer>
         <StartVoteButton onClick={startVote}>Start voting</StartVoteButton>
+        <ResetButton onClick={reset}>Reset</ResetButton>
       </ButtonContainer>
     </div>
   );

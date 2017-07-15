@@ -9,6 +9,7 @@ import {
 import { navigate } from '../actions/route';
 import Vote from './Vote';
 import totalVotes from '../utility/totalVotes';
+import apiService from '../api/apiService';
 
 const mapStateToProps = state => ({
   cards: state.cards,
@@ -26,7 +27,10 @@ const mapDispatchToProps = dispatch => ({
   updateVotes: (id, votes) => dispatch(updateVotes(id, votes)),
 
   finish: () => {
-    dispatch(navigate('VOTE_COMPLETE'));
+    dispatch(navigate('VOTE_REVIEW'));
+    apiService.sendVotes({
+      name: 'foo'
+    });
   }
 });
 

@@ -1,41 +1,64 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
+import _ from 'lodash';
 
 import Title from '../utility/titles';
-import { SuccessButton } from '../utility/Buttons';
+import { SuccessButton, PrimaryButton } from '../utility/Buttons';
 import { Container, ButtonContainer } from '../utility/Container';
 import Card from './Card';
 
-const VoteComplete = ({ cards, startOver, options }) => {
-  const VoteButton = styled(SuccessButton)`
+const EditButton = styled(PrimaryButton)`
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+   `;
+
+const FinishButton = styled(SuccessButton)`
         display: block;
         text-align: center;
    `;
 
-  const shownCards = cards.filter(card => options[card.id]);
+const VoteReview = ({
+  cards,
+  updateVotes,
+  deleteOption,
+  updateOptionName,
+  addOption,
+  totalVotes,
+  edit,
+  finish
+}) => {
+  const shownCards = cards.filter(card =>
+    _.some(card.options, o => o.votes > 0)
+  );
 
   return (
     <div>
       <Container>
-        <Title>Results:</Title>
+        <Title>Your votes:</Title>
         {shownCards.map(card =>
           <Card
             key={card.id}
             id={card.id}
             title={card.title}
-            options={options[card.id]}
+            options={card.options}
           />
         )}
       </Container>
       <ButtonContainer>
-        <VoteButton onClick={startOver}>Start over</VoteButton>
+        <EditButton onClick={edit}>
+          Edit ({totalVotes} votes total)
+        </EditButton>
+        <FinishButton onClick={finish}>
+          Finish voting and view results
+        </FinishButton>
       </ButtonContainer>
     </div>
   );
 };
 
-VoteComplete.propTypes = {
+VoteReview.propTypes = {
   cards: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
@@ -50,4 +73,4 @@ VoteComplete.propTypes = {
   ).isRequired
 };
 
-export default VoteComplete;
+export default VoteReview;
