@@ -316,6 +316,7 @@
     },
     {
         "title": "Corrupt Empire (LAW)",
+        "elect": "Elect Player",
         "resolutions": {
             "for": "The first player to destroy a Space Dock belonging to the elected player as a result of either Space Battle or Invasion Combat receives 1 Victory Point. Then discard this card."
         }
